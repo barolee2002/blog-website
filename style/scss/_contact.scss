@@ -1,0 +1,234 @@
+.contact-page {
+    margin-top: 98px;
+    font-size: 16px;
+    font-family: $headerFont;
+    margin-bottom: 704px;
+
+    &-way {
+        display: flex;
+        gap: 0 21px;
+        margin: 0px 146px;
+        margin-bottom: 117px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $light;
+            padding: 32px;
+            gap: 20px 0;
+            width: 33%;
+            border-radius: 16px;
+            font-family: $headerFont;
+            max-height: 250px;
+
+            &-icon {
+                background-color: $pupleColor;
+                padding: 23px;
+                border-radius: 50px;
+            }
+
+            &-name {
+                color: $pupleColor;
+                font-weight: 700;
+                letter-spacing: 0.1px;
+
+            }
+
+            &-address {
+                color: $dark-blur;
+                font-weight: 500;
+                line-height: 175%;
+                letter-spacing: 0.08px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &-map {
+        background-image: url("../../assets/image/map.jpg");
+        min-height: 547px;
+        background-position: 80%;
+        position: relative;
+        background-size: cover;
+
+        .contact-form {
+            padding: 60px 50px;
+            border-radius: 16px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $light;
+            z-index: 2;
+            max-width: 768px;
+
+            .form-group {
+                display: flex;
+                float: left;
+                flex-direction: column;
+
+                .form-label {
+                    padding-bottom: 8px;
+                    margin: 10px;
+                    margin-bottom: 0px;
+                    color: $formLabelColor;
+                    font-weight: 600;
+                    line-height: 175%;
+                    letter-spacing: 0.08px;
+                }
+
+                .form-control {
+                    padding: 17px;
+                    font-size: 16px;
+                    margin: 10px;
+                    margin-top: 0;
+                    border: 1px solid $inputOutlineColor;
+                    border-radius: 8px;
+                }
+
+                .form-control.message {
+                    height: 175px
+                }
+            }
+
+            .button-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .form-submit {
+                    margin: 10px;
+                    margin-top: 43px;
+                    padding: 21px 36px;
+                    border: none;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $light;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    background-color: $pupleColor;
+
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width : 1200px) and (min-width : 700.1px) {
+        font-size: 11px;
+        margin-top: 77px;
+        &-way {
+            gap: 0 14px;
+            margin: 0px 100px;
+            margin-bottom: 87px;
+            // min-height: 380px;
+
+            &-item {
+                padding: 20px;
+                gap: 14px 0;
+                max-height: 180px;
+
+                &-icon {
+                    padding: 16px;
+
+                    &>img {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+                &-name {
+                    font-size: 14px;
+
+                }
+
+                &-address {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        &-map {
+            min-height: 380px;
+            .contact-form {
+                padding: 50px 22px;
+                max-width: 60%;
+
+                .form-group {
+                    .form-control {
+                        padding: 12px;
+                        font-size: 11px;
+                    }
+
+                    .form-control.message {
+                        height: 120px
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 705px) {
+        font-size: 11px;
+        margin-top: 77px;
+        &-way {
+            display: block;
+            margin: 0px 60px;
+            margin-bottom: 70px;
+            text-align: center;
+
+            &-item {
+                width: 100%;
+                padding: 20px;
+                gap: 14px 0;
+                max-height: 180px;
+                margin-bottom: 30px;
+
+                &-icon {
+                    padding: 16px;
+
+                    &>img {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+                &-name {
+                    font-size: 14px;
+
+                }
+
+                &-address {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        &-map {
+            min-height: 380px;
+            background-size: 300%;
+            background-position: 41% 40%;
+            .contact-form {
+                display: block;
+                float: none;
+                padding: 50px 22px;
+                width: 90%;
+                
+
+                .form-group {
+                    width: 100%;
+
+                    .form-control {
+                        padding: 8px;
+                        font: 11px;
+                    }
+
+                    .form-control.message {
+                        height: 120px
+                    }
+                }
+            }
+        }
+    }
+}

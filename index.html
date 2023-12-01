@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@500;600;700;800&family=Roboto&family=Source+Sans+3:wght@200&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@700&family=Roboto&family=Source+Sans+3:wght@200&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+        <link rel="stylesheet" href="./style/css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main">
+            <!-- <iframe src="header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe> -->
+            <!-- <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+            <div class="header">
+                <a href="#" class="logo">
+                    <img src="./assets/image/logo.jpg" alt="logo"
+                        class="logo-image">
+                    <h6 class="logo-name">Zarrin</h6>
+                </a>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="menu-item-navigation-link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item-navigation-link">About</a>
+                    </li>
+                    <li>
+                        <button class="menu-search-button"></button>
+                    </li>
+                    <li>
+                        <a href="#!"
+                            class="menu-item-navigation-link menu-contact-button">Contact
+                            Us</a>
+                    </li>
+                </ul>
+                <button class="hide-menu-button" onclick={handleOpenMenu()}>
+                </button>
+                <ul class="hide-menu">
+                    <li>
+                        <a href="#" class="hide-menu-item-navigation-link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hide-menu-item-navigation-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#!"
+                            class="menu-item-navigation-link">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="landing-page">
+
+                <div class="future">
+                    <div class="future-content">
+                        <p class="future-content-type">Featured Post</p>
+                        <h1 class="future-content-title">How AI will<br> Change
+                            the Future</h1>
+                        <p class="future-content-content">The future of AI will
+                            see home robots having enhanced intelligence,
+                            increased capabilities, and becoming more personal
+                            and possibly cute. For example, home robots will
+                            overcome navigation, direction</p>
+                        <button class="btn future-content-more">Read more</button>
+                    </div>
+                    <div class="future-image">
+                        <img src="/./assets/image/slider.jpg" alt>
+                    </div>
+                </div>
+                <div class="new-post">
+                    <div class="new-post-background">
+                        <img src="./assets/image/blog1.jpg" alt="new post"
+                            class="background-image">
+                    </div>
+                    <div class="post-content new-post-content">
+
+                        <div class="post-content-header new-post-content-header">
+                            <p class="post-content-header-type">DEVELOPMENT</p>
+                            <p class="post-content-header-time">16 March 2023</p>
+                        </div>
+                        <h6 class="post-content-title new-post-title">How to
+                            make a
+                            Game look more attractive with New VR & AI
+                            Technology</h6>
+                        <p class="post-content-overview new-post-overview">Google
+                            has been investing in AI for many years and bringing
+                            its benefits to individuals, businesses and
+                            communities. Whether it's publishing
+                            state-of-the-art research, building helpful products
+                            or developing tools and resources that enable
+                            others, we're committed to making AI accessible to
+                            everyone.</p>
+                        <button class="btn new-post-more"
+                            onclick={handleOpenBlog(1)}>Read More</button>
+                    </div>
+                </div>
+                <div class="recent">
+                    <div class="content-heading">
+                        <h3 class="content-heading-title">Our Recent Post</h3>
+                        <button class="btn content-heading-view-all"
+                            onclick={navigatePage(1)}>View All</button>
+                    </div>
+                    <div class="post-container">
+
+                        <div class="post-item item-1">
+                            <div class="post-item-image">
+                                <img src="./assets/image/blog1.jpg"
+                                    alt="post-image"
+                                    class="item-image">
+                            </div>
+
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">DEVELOPMENT</p>
+                                    <p class="post-content-header-time">16 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">How to
+                                    make a Game look more attractive with New VR
+                                    &
+                                    AI Technology</h6>
+                                <p class="post-content-overview">Google
+                                    has been investing in AI for many years and
+                                    bringing its benefits to individuals,
+                                    businesses
+                                    and communities. Whether it's publishing
+                                    state-of-the-art research, building helpful
+                                    products or developing tools and resources
+                                    that
+                                    enable others, we're committed to making AI
+                                    accessible to everyone.</p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(1)}>Read More</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog2.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Travel</p>
+                                    <p class="post-content-header-time">13 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">How to
+                                    8 Rules of Travelling In Sea You Need To
+                                    Know</h6>
+                                <p class="post-content-overview">Google
+                                    Travelling in sea has many advantages. Some
+                                    of
+                                    the advantages of transporting goods by sea
+                                    include: you can ship large volumes at costs
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(2)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog3.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">DEVELOPMENT</p>
+                                    <p class="post-content-header-time">11 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">How to build
+                                    strong
+                                    portfolio and get a Job in UI/UX</h6>
+                                <p class="post-content-overview">Capitalize on
+                                    low
+                                    hanging fruit to identify a ballpark value
+                                    added
+                                    activity to beta test. Override the digital
+                                    divide with additional clickthroughs from
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(3)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog4.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Sports</p>
+                                    <p class="post-content-header-time">10 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">How to Be a
+                                    Professional Footballer in 2023</h6>
+                                <p class="post-content-overview">Organically
+                                    grow
+                                    the
+                                    holistic world view of disruptive innovation
+                                    via
+                                    workplace diversity and empowerment.
+                                    survival
+                                    strategies to ensure proactive</p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(4)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="popular">
+                    <div class="content-heading">
+                        <h3 class="content-heading-title">Popular Post</h3>
+                        <button class="btn content-heading-view-all"
+                            onclick={navigatePage(1)}>View All</button>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-item">
+                            <img src="./assets/image/blog5.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Travel</p>
+                                    <p class="post-content-header-time">13 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">Train Or Bus
+                                    Journey?Which one suits?</h6>
+                                <p class="post-content-overview">The choice
+                                    between
+                                    a train or bus journey depends on various
+                                    factors such as the distance of the journey,
+                                    the time available, the cost, and person
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(5)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog6.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">DEVELOPMENT</p>
+                                    <p class="post-content-header-time">11March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">Best Website to
+                                    research for your next project</h6>
+                                <p class="post-content-overview">Capitalize on
+                                    low
+                                    hanging fruit to identify a ballpark value
+                                    added activity to beta test. Override the
+                                    digital divide with additional clickthroughs
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(6)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog7.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Sports</p>
+                                    <p class="post-content-header-time">10 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">How to Be a
+                                    Dancer
+                                    in 2023 with proper skills?</h6>
+                                <p class="post-content-overview">Organically
+                                    grow
+                                    the holistic world view of disruptive
+                                    innovation via workplace diversity and
+                                    empowerment. survival strategies to ensure
+                                    proactive
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(7)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog8.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Travel</p>
+                                    <p class="post-content-header-time">13 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">Who is the best
+                                    singer on chart?Know him?</h6>
+                                <p class="post-content-overview">chart by
+                                    Billboard
+                                    which ranks the all-time greatest artists
+                                    based on their performance on the weekly
+                                    Billboard Hot 100 and
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(8)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog9.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">DEVELOPMENT</p>
+                                    <p class="post-content-header-time">11 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">How to start
+                                    export
+                                    import business from home?</h6>
+                                <p class="post-content-overview">Capitalize on
+                                    low
+                                    hanging fruit to identify a ballpark value
+                                    added activity to beta test. Override the
+                                    digital divide with additional clickthroughs
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(9)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog2.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Sports</p>
+                                    <p class="post-content-header-time">10 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">Make some drinks
+                                    with chocolates chocolates and milk</h6>
+                                <p class="post-content-overview">Organically
+                                    grow
+                                    the holistic world view of disruptive
+                                    innovation via workplace diversity and
+                                    empowerment. survival strategies to ensure
+                                    proactive
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(10)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-page">
+                <div class="slogan">
+                    <p class="slogan-heading">OUR BLOGS</p>
+                    <h3 class="slogan-title">Find our all blogs from here</h3>
+                    <p class="slogan-subtitle">our blogs are written from very
+                        research research and
+                        well known writers writers so that we can provide you
+                        the best blogs and articles articles for you to read
+                        them all along</p>
+                </div>
+                <div class="all-post post-container">
+
+                    <div class="post-item">
+                        <img src="./assets/image/blog5.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">Travel</p>
+                                <p class="post-content-header-time">13 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">Train Or Bus
+                                Journey?Which one suits?</h6>
+                            <p class="post-content-overview">The choice
+                                between
+                                a train or bus journey depends on various
+                                factors such as the distance of the journey,
+                                the time available, the cost, and person
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(5)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/image/blog6.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">DEVELOPMENT</p>
+                                <p class="post-content-header-time">11March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">Best Website to
+                                research for your next project</h6>
+                            <p class="post-content-overview">Capitalize on
+                                low
+                                hanging fruit to identify a ballpark value
+                                added activity to beta test. Override the
+                                digital divide with additional clickthroughs
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(6)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/image/blog7.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">Sports</p>
+                                <p class="post-content-header-time">10 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">How to Be a
+                                Dancer
+                                in 2023 with proper skills?</h6>
+                            <p class="post-content-overview">Organically
+                                grow
+                                the holistic world view of disruptive
+                                innovation via workplace diversity and
+                                empowerment. survival strategies to ensure
+                                proactive
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(7)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/image/blog8.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">Travel</p>
+                                <p class="post-content-header-time">13 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">Who is the best
+                                singer on chart?Know him?</h6>
+                            <p class="post-content-overview">chart by
+                                Billboard
+                                which ranks the all-time greatest artists
+                                based on their performance on the weekly
+                                Billboard Hot 100 and
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(8)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/image/blog9.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">DEVELOPMENT</p>
+                                <p class="post-content-header-time">11 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">How to start
+                                export
+                                import business from home?</h6>
+                            <p class="post-content-overview">Capitalize on
+                                low
+                                hanging fruit to identify a ballpark value
+                                added activity to beta test. Override the
+                                digital divide with additional clickthroughs
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(9)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/image/blog10.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">Sports</p>
+                                <p class="post-content-header-time">10 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">Make some drinks
+                                with chocolates chocolates and milk</h6>
+                            <p class="post-content-overview">Organically
+                                grow
+                                the holistic world view of disruptive
+                                innovation via workplace diversity and
+                                empowerment. survival strategies to ensure
+                                proactive
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(10)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/image/blog2.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">Travel</p>
+                                <p class="post-content-header-time">13 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">How to
+                                8 Rules of Travelling In Sea You Need To
+                                Know</h6>
+                            <p class="post-content-overview">Google
+                                Travelling in sea has many advantages. Some
+                                of
+                                the advantages of transporting goods by sea
+                                include: you can ship large volumes at costs
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(2)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/image/blog3.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">DEVELOPMENT</p>
+                                <p class="post-content-header-time">11 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">How to build
+                                strong
+                                portfolio and get a Job in UI/UX</h6>
+                            <p class="post-content-overview">Capitalize on
+                                low
+                                hanging fruit to identify a ballpark value
+                                added
+                                activity to beta test. Override the digital
+                                divide with additional clickthroughs from
+                            </p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(3)}>Read
+                                More...</button>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <img src="./assets/image/blog4.jpg" alt="post-image"
+                            class="item-image">
+                        <div class="post-content">
+                            <div
+                                class="post-content-header">
+                                <p class="post-content-header-type">Sports</p>
+                                <p class="post-content-header-time">10 March
+                                    2023</p>
+                            </div>
+                            <h6 class="post-content-title">How to Be a
+                                Professional Footballer in 2023</h6>
+                            <p class="post-content-overview">Organically
+                                grow
+                                the
+                                holistic world view of disruptive innovation
+                                via
+                                workplace diversity and empowerment.
+                                survival
+                                strategies to ensure proactive</p>
+                            <button class="btn post-content-btn"
+                                onclick={handleOpenBlog(4)}>Read
+                                More...</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-blog-page">
+                <div class="single-blog-page-information">
+                    <div class="post-content-header">
+                        <p class="post-content-header-type">DEVELOPMENT</p>
+                        <p class="post-content-header-time">16 March 2023</p>
+                    </div>
+                    <h3 class="blog-title">
+                        How to make a Game look more attractive with New VR & AI
+                        Technology
+                    </h3>
+                </div>
+                <div class="page-main-image ">
+                    <img src="./assets/image/blog1.jpg" alt="main image"
+                        class="main-image">
+                </div>
+                <div class="single-blog-page-content">
+                    <div class="content">
+                        Google has been investing in AI for many years and
+                        bringing its benefits to individuals, businesses and
+                        communities. Whether it's publishing state-of-the-art
+                        research, building helpful products or developing tools
+                        and resources that enable others, we're committed to
+                        making AI accessible to everyone. <br><br>
+                        We're now at a pivotal moment in our AI journey.
+                        Breakthroughs in generative AI are fundamentally
+                        changing how people interact with technology — and at
+                        Google, we've been responsibly developing large language
+                        models so we can safely bring them to our products.
+                        Today, we're excited to share our early progress.
+                        Developers and businesses can now try new APIs and
+                        products that make it easy, safe and scalable to start
+                        building with Google's best AI models through Google
+                        Cloud and a new prototyping environment called
+                        MakerSuite. And in Google Workspace, we're introducing
+                        new features that help people harness the power of
+                        generative AI to create, connect and collaborate.
+                        <br><br>
+                        <div class="content-slogan">
+                            <h6 class="slogan">People worry that computers will
+                                get too smart and take over the world, but the
+                                real problem is that they're too stupid and they've
+                                already taken over the world.</h6>
+                            <p class="author">Pedro Domingos</p>
+                        </div>
+                        More than 3 billion people already benefit from
+                        AI-powered features in Google Workspace, whether it's
+                        using Smart Compose in Gmail or auto-generated summaries
+                        in Google Docs. Now, we're excited to take the next step
+                        and bring a limited set of trusted testers a new set of
+                        features that makes the process of writing even easier.
+                        In Gmail and Google Docs, you can simply type in a topic
+                        you'd like to write about, and a draft will be instantly
+                        generated for you. So if you're a manager onboarding a
+                        new employee, Workspace saves you the time and effort
+                        involved in writing that first welcome email. From
+                        there, you can elaborate upon or abbreviate the message
+                        or adjust the tone to be more playful or professional —
+                        all in just a few clicks. We'll be rolling out these new
+                        experiences to testers in the coming weeks.
+                        <img src="./assets/image/sub-blog1.jpg" alt
+                            class="content-sub-image"><br>
+                        We're so excited by the potential of generative AI, and
+                        the opportunities it will unlock — from helping people
+                        express themselves creatively, to helping developers
+                        build brand new types of applications, to transforming
+                        how businesses and governments engage their customers
+                        and constituents. Stay tuned for more to come in the
+                        weeks and months ahead.
+                    </div>
+                </div>
+                <div class="popular">
+                    <div class="content-heading">
+                        <h3 class="content-heading-title">Popular Post</h3>
+                        <button class="btn content-heading-view-all"
+                            onclick={navigatePage(1)}>View All</button>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-item">
+                            <img src="./assets/image/blog8.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Travel</p>
+                                    <p class="post-content-header-time">13 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">Who is the best
+                                    singer on chart?Know him?</h6>
+                                <p class="post-content-overview">chart by
+                                    Billboard
+                                    which ranks the all-time greatest artists
+                                    based on their performance on the weekly
+                                    Billboard Hot 100 and
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(8)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog9.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">DEVELOPMENT</p>
+                                    <p class="post-content-header-time">11 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">How to start
+                                    export
+                                    import business from home?</h6>
+                                <p class="post-content-overview">Capitalize on
+                                    low
+                                    hanging fruit to identify a ballpark value
+                                    added activity to beta test. Override the
+                                    digital divide with additional clickthroughs
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(9)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <img src="./assets/image/blog2.jpg" alt="post-image"
+                                class="item-image">
+                            <div class="post-content">
+                                <div
+                                    class="post-content-header">
+                                    <p class="post-content-header-type">Sports</p>
+                                    <p class="post-content-header-time">10 March
+                                        2023</p>
+                                </div>
+                                <h6 class="post-content-title">Make some drinks
+                                    with chocolates chocolates and milk</h6>
+                                <p class="post-content-overview">Organically
+                                    grow
+                                    the holistic world view of disruptive
+                                    innovation via workplace diversity and
+                                    empowerment. survival strategies to ensure
+                                    proactive
+                                </p>
+                                <button class="btn post-content-btn"
+                                    onclick={handleOpenBlog(10)}>Read
+                                    More...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="not-found-page">
+                <div class="not-found-page-wrapper">
+
+                    <div class="not-found-page-wrapper-dialog">
+                        <img src="./assets/image/404.svg" alt="request status"
+                            class="not-found-page-wrapper-dialog-status">
+                        <h6 class="not-found-page-wrapper-dialog-message">
+                            Sorry!<br>
+                            The link is broken, try to refresh or go to home
+                        </h6>
+                        <button class="back-home-button btn"
+                            onclick={navigatePage(0)}>
+                            Go To Home
+                        </button>
+    
+                    </div>
+                </div>
+
+            </div>
+            <div class="about-page">
+                <div class="slogan">
+                    <p class="slogan-heading">ABOUT US</p>
+                    <h3 class="slogan-title">Creative Blog Writting and
+                        publishing site</h3>
+                    <p class="slogan-subtitle">Leverage agile frameworks to
+                        provide a robust synopsis for high level overviews.
+                        Iterative approaches to corporate strategy foster
+                        collaborative thinking to further the overall value
+                        proposition. Organically grow the holistic world view of
+                        disruptive innovation via workplace diversity and
+                        empowerment.</p>
+                </div>
+                <div class="page-main-image">
+                    <img src="./assets/image/about.jpg" alt="main image"
+                        class="main-image">
+                </div>
+                <div class="team-work">
+                    <p class="team-work-heading">
+                        HOW WE WORK
+                    </p>
+                    <div class="team-work-title">
+                        <h3 class="team-title">
+                            I will show you how our team works
+                        </h3>
+                        <p class="team-slogan">Bring to the table win-win market
+                            strategies to ensure perfect articles. </p>
+                    </div>
+                    <div class="work-steps">
+                        <div class="work-step">
+                            <div class="work-step-content">
+                                <p class="work-step-content-number">
+                                    01
+                                </p>
+                                <h6 class="work-step-content-name">
+                                    Brainstorming
+                                </h6>
+                                <p class="work-step-content-overview">
+                                    Bring to the table win-win survival
+                                    strategies
+                                    to
+                                    ensure
+                                    proactive domination. At the end of the day,
+                                    going
+                                    forward, a new normal that has evolved from
+                                    generation X
+                                    is on the runway heading towards a
+                                    streamlined
+                                    cloud
+                                    solution. User generated
+                                </p>
+                            </div>
+                            <div class="work-step-button">
+                                <button class="work-step-more" onclick ={handleOpenAny(1)}>
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="work-step">
+                            <div class="work-step-content">
+                                <p class="work-step-content-number">
+                                    02
+                                </p>
+                                <h6 class="work-step-content-name">
+                                    Analysing
+                                </h6>
+                                <p class="work-step-content-overview">
+                                    Capitalize on low hanging fruit to identify
+                                    a
+                                    ballpark value added activity to beta test.
+                                    Override
+                                    the digital divide with additional
+                                    clickthroughs
+                                    from DevOps. Nanotechnology immersion along
+                                    the
+                                    information highway will close the loop on
+                                    focusing
+                                    solely on the bottom line solely on the
+                                    bottom
+                                    line.
+                                </p>
+                            </div>
+                            <div class="work-step-button">
+                                <button class="work-step-more" onclick ={handleOpenAny(2)}>
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="work-step">
+                            <div class="work-step-content">
+                                <p class="work-step-content-number">
+                                    03
+                                </p>
+                                <h6 class="work-step-content-name">
+                                    News Publishing
+                                </h6>
+                                <p class="work-step-content-overview">
+                                    Leverage agile frameworks to provide a robust
+                                    synopsis for high level overviews. Iterative
+                                    approaches to corporate strategy foster
+                                    collaborative thinking to further the overall
+                                    value
+                                    proposition. Organically grow the holistic world
+                                    view of disruptive innovation via workplace
+                                    diversity and empowerment.
+                                </p>
+                            </div>
+
+                            <div class="work-step-button">
+                                <button class="work-step-more" onclick ={handleOpenAny(3)}>
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-page">
+                <div class="slogan">
+                    <h3 class="slogan-title">Get in Touch</h3>
+                    <p class="slogan-subtitle">Contact us to publish your
+                        content and show ads to our website and get a good
+                        reach.</p>
+                </div>
+                <div class="contact-page-way">
+                    <div class="contact-page-way-item">
+                        <div class="contact-page-way-item-icon">
+                            <img src="./assets/image/home.svg" alt="home">
+                        </div>
+                        <p class="contact-page-way-item-name">Office
+                        </p>
+                        <p class="contact-page-way-item-address">
+                            Victoria Street, London, UK
+                        </p>
+                    </div>
+                    <div class="contact-page-way-item">
+                        <div class="contact-page-way-item-icon">
+                            <img src="./assets/image/mail.svg" alt="mail">
+                        </div>
+                        <p class="contact-page-way-item-name">Email
+                        </p>
+                        <p class="contact-page-way-item-address">
+                            hello@zarrin.com
+                        </p>
+                    </div>
+                    <div class="contact-page-way-item">
+                        <div class="contact-page-way-item-icon">
+                            <img src="./assets/image/phone.svg" alt="mail">
+
+                        </div>
+                        <p class="contact-page-way-item-name">Phone
+                        </p>
+                        <p class="contact-page-way-item-address">
+                            (001) 2342 3451
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-page-map">
+                    <form action method="POST" class="contact-form">
+                        <div class="form-group col-2">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" name="name"
+                                class="form-control name">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" name="email"
+                                class="form-control email">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="text" name="phone"
+                                class="form-control phoneNumber">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" name="subject"
+                                class="form-control subject">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group col-full-width">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea type="text" name="message" form="contact-form"
+                                class="form-control message" ></textarea>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="button-wrapper">
+                            <button class="form-submit">
+                                Send Messenger
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="started">
+                <h2 class="started-slogan">Get our stories delivered From us
+                    to your inbox weekly.</h2>
+                <div class="get-started">
+                    <input class="email-input email" placeholder="Your email" />
+                    <button class="btn start-button">
+                        Get started
+                    </button>
+
+                </div>
+                <p class="sub-slogan">
+                    Get a response tomorrow if you submit by 9pm today.
+                    If we received after 9pm will get a reponse the
+                    following day.
+                </p>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="./assets/image/logo.jpg" alt="logo"
+                        class="logo-image">
+                    <h6 class="logo-name">Zarrin</h6>
+                </div>
+                <ul class="footer-navigation">
+                    <li><a href="#" class="footer-navigation-link">Home</a></li>
+                    <li><a href="#" class="footer-navigation-link">Blog</a></li>
+                    <li><a href="#" class="footer-navigation-link">About</a></li>
+                    <li><a href="#" class="footer-navigation-link">Contact Us</a></li>
+                </ul>
+                <div class="partner">
+                    <p class="partner-item">FB</p>
+                    <p class="partner-item">IG</p>
+                    <p class="partner-item">LN</p>
+                    <p class="partner-item">YT</p>
+                </div>
+                <p class="footer-text">Copyright Ideapeel Inc © 2023. All Right
+                    Reserved</p>
+            </div>
+
+        </div>
+        <div class="popup-confirm">
+            <p>Sent message</p>
+        </div>
+
+        <script src="./script/script.js"></script>
+        <script src="./script/validate.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              Validator({
+                form: '.contact-form',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                  Validator.isRequired('.name', 'Please enter your name'),
+                  Validator.isRequired('.email', 'Please enter your email'),
+                  Validator.isRequired('.subject', 'Please enter your subject'),
+                  Validator.isRequired('.message', 'Please enter your message'),
+                  Validator.isEmail('.email'),
+                  Validator.isPhoneNumber('.phoneNumber'),
+                ],
+                onSubmit: function (data) {
+                  console.log(data);
+                }
+              });
+            });
+      
+          </script>
+    </body>
+</html>

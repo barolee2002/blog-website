@@ -1,0 +1,94 @@
+@import "variable";
+
+.header {
+    top : 0;
+    left: 0;
+    right: 0;
+    padding: 21px 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: $light;
+    position: fixed;
+    max-height: 98px;
+
+    font-size: 16px;
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 0 42px;
+        font-family: $headerFont;
+        color : $dark;
+        font-weight: 500;
+        &-search-button {
+            background-image: url(../../assets/image/search-minus.jpg);
+            width: 22px;
+            height:22px;
+            object-fit: cover;
+            border: none;
+            text-decoration: none
+        }
+        &-contact-button {
+            font-weight: 600;
+            color :$light;
+            text-decoration: none;
+            padding : 16px 48px;
+            background-color: $pupleColor;
+            border-radius : 8px;
+        }
+        &-item-navigation-link {
+            
+            font-style: unset;
+            text-decoration: none
+        }
+        &-item:hover {
+            color : $pupleColor;
+        }
+    }
+    .hide-menu-button{
+        display: none;
+        border: none;
+        background-color: $light;
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+        background-image: url(../../assets/image/Menu.svg);
+    }
+    .hide-menu {
+        display: none;
+        position: absolute;
+        top:64px;
+        right: 24px;
+        z-index: 1000;
+        padding: 12px;
+        border-radius: 6px;
+        background-color: $pageColor;
+        
+        &>li {
+            margin-bottom: 16px;
+            font-size: 24px;
+            color: $dark;
+        }
+        
+    }
+    @media screen and (min-width : 700.1px) and (max-width : 1200px) {
+        padding: 15px 74px;
+        font-size: 11px;
+        .menu {
+            &-contact-button {
+                padding : 12px 35px;
+            }
+        }
+    }
+    @media screen and (max-width : 705px) {
+        padding: 16px 24px;
+        .menu {
+            display: none;
+
+        }
+        .hide-menu-button{
+            display: block;
+        }
+    }
+}
