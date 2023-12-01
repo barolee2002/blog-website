@@ -1,0 +1,92 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 104px;
+    margin-bottom: 54px;
+    font-size : 16px;
+    .logo{
+        margin-bottom: 42px;
+    }
+    &-navigation {
+        display:flex;
+        font-family: $headerFont;
+        
+        font-weight: 400;
+        line-height: 150%;
+        gap : 0 50px;
+        margin-bottom: 40px;
+        &-link {
+           color : $footerColor; 
+           &:hover {
+            color : $pupleColor;
+           }
+        }
+    }
+    .partner {
+        display: flex;
+        justify-content: center;
+        gap : 0 16px;
+        padding-bottom: 40px;
+        width: 100%;
+        margin-bottom: 40px;
+        border-bottom: 1px solid $pupleColor;
+        &-item {
+            font-family: $headerFont;
+            font-weight: 700;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 25px;
+            border-radius : 50px;
+            background-color: $pupleColor;
+            padding: 8px;
+            color : $light;
+        }
+        
+
+    }
+    &-text {
+        font-family: $headerFont;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    @media screen and (min-width : 700.1px) and (max-width : 1200px) {
+        font-size: 11px;
+        .partner {
+            &-item {
+                width: 28px;
+                height: 28px;
+                line-height: 14px;
+            }
+            
+    
+        }
+    }
+    @media screen and (max-width: 705px) {
+        margin: 0px 48px;
+        font-size: 11px;
+        &-navigation{
+            gap: 0 36px;
+            margin-bottom: 30px;
+        }
+        .logo {
+            margin-bottom: 24px;
+        }
+        .partner {
+            margin-bottom: 28px;
+            &-item {
+                width: 28px;
+                height: 28px;
+                line-height: 14px;
+            }
+            
+    
+        }
+        &-text {
+            margin-bottom: 60px;
+        }
+    }
+    
+}

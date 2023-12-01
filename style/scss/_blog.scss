@@ -1,0 +1,24 @@
+.blog-page {
+    margin: 0 104px;
+    margin-top: 987px;
+    margin-bottom: 131px;
+    color: $dark-blur;
+    font-family: $headerFont;
+    @media screen and (min-width : 700.1px) and (max-width : 1200px) {
+        margin: 74px;
+        margin-bottom: 0;
+        
+    }
+    @media screen and (max-width: 705px) {
+        margin: 0px 24px;
+        margin-top: 74px;
+        .post-container {
+            .post-item {
+                display: none;
+                &:nth-child(-n + 6) {
+                    display: block;
+                }
+            }
+        }
+    }
+}

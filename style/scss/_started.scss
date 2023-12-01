@@ -1,0 +1,118 @@
+.started {
+    background-color: $pupleColor;
+    height: 534px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 53px;
+    padding: 0 302px;
+
+    &-slogan {
+        font-family: $headerFont;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 92%;
+        letter-spacing: 0.2;
+        color: $light;
+
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .get-started {
+        margin-bottom: 24px;
+        display: flex;
+        gap: 0 8px;
+        .email-input {
+            padding: 18px 23px;
+            border-radius: 8px;
+            font-size: 16px;
+            border: none;
+            width: 320px;
+        }
+
+        .start-button {
+            padding: 18px 32px;
+            border-radius: 8px;
+            font-family: $headerFont;
+            background-color: $pupleColor;
+            border: 1px solid $light;
+            color: $light;
+
+        }
+
+    }
+
+    .sub-slogan {
+        font-family: $headerFont;
+        color: #bbb;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        margin: 0px 140px;
+    }
+
+    @media screen and (min-width : 700.1px) and (max-width : 1200px) {
+        padding: 0px 216px;
+        &-slogan {
+            font-size: 37px;
+            margin-bottom: 34px;
+        }
+
+        .get-started {
+
+            .email-input {
+                padding : 12px 16px;
+                font-size: 11px;
+                width : 225px;
+            }
+
+            .start-button {
+                padding : 12px 22px;
+                font-size: 11px;
+            }
+
+        }
+
+        .sub-slogan {
+            font-size: 11px;
+            margin: 0;
+        }
+    }
+    @media screen and (max-width : 705px) {
+        padding: 0px 20px;
+        max-height: 400px;
+        &-slogan {
+            font-size: 24px;
+            margin: 0px 26px;
+            margin-bottom: 35px;
+        }
+
+        .get-started {
+            gap: 0 5px;
+            width: 100%;
+            margin: 0px 5px;
+            margin-bottom: 34px;
+            .email-input {
+                padding : 12px 16px;
+                font-size: 11px;
+                width: 70%;
+            }
+
+            .start-button {
+                padding : 12px 22px;
+                font-size: 11px;
+                
+            }
+
+        }
+
+        .sub-slogan {
+            font-size: 11px;
+            margin: 0px 23px;
+        }
+    }
+
+}
